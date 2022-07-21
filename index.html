@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="disableSubmit()">
+    <div id="heading">
+    <h1 id=title>Survay Form!</h1>
+    <p id="description">This is Suvay across Programmers to know which technology and tools software engineers are using & which gadgets they are using.</p>
+    </div>
+
+    <div id="main">
+
+          <!-- -------------------------Social media links---------------------------------- -->
+
+          <div class="stickyicon-list">
+            <a href="https://www.facebook.com/amank0259" target="_blank" class="facebook"> 
+            <i class="fa fa-facebook"></i> 
+            </a> 
+            <a href="https://www.instagram.com/techboy_aman" target="_blank" class="instagram"> 
+              <i class="fa fa-instagram"></i> 
+              </a>
+              <a href="https://www.linkedin.com/in/amank0259/" target="_blank" class="linkedin"> 
+                <i class="fa fa-linkedin"></i>
+                <a href="#youtube" target="_blank" class="youtube"> 
+                  <i class="fa fa-youtube"></i> 
+                  </a> 
+            <a href="https://www.twitter.com/amank0259" target="_blank" class="twitter"> 
+            <i class="fa fa-twitter"></i> 
+            </a>      
+            </a> 
+            <a href="#google" target="_blank" class="google"> 
+            <i class="fa fa-google"></i> 
+            </a>                               
+            </div> 
+
+            <!-- ----------------------------------------------------------------------------- -->
+
+
+        <form id="survey-form">
+        <div id="input-fields">
+            <label id="name-label"><b>Name:</b></label>
+            <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
+            <br>
+            <label id="email-label"><b>Email:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+            <br>
+            <label id="number-label"><b>Age:</b></label>
+            <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="12+">
+         </div>
+
+         <div id="input-fields">
+          <p class="gender ">What is your gender?</p>
+          <input type="radio" id="male" name="gender" value="male"> 
+          <label for="male">Male</label> 
+          <input type="radio" id="female" name="gender" value="female"> <label for="female"> Female</label>
+          </div>
+
+         <div id="dropdown-div"><br>
+            <label  id="dropdown-label"><strong>Programming language you are expert at: </strong></label><br>
+            <select id="dropdown" name="code-lang" class="form">
+                <option value="C">C (Programming Language)</option>
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+                <option value="php">PHP</option>
+                <option value="Js">Java Script</option>
+                <option value="Go">Go (Programming Language)</option>
+                <option value="ruby">Ruby on rails</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+            </select>
+         </div>
+
+         <div id="button-area">
+             <br>
+            <label id="job-label"><b>Employment Status:</b></label><br>
+            <input type="radio" id="part-time" class="radio-inline" name="status" value="freelancer"> 
+            <label for="part-time">Part-time job holder.(Freelancer)</label> <br>
+            <input type="radio" id="full-time" class="radio-inline" name="status" value="employed" checked> <label for="full-time"> Full-time job holder.(Employed)</label><br>
+            <input type="radio" id="Applier" class="radio-inline" name="status" value="applier"> <label for="Applier"> Looking for a job.(Applier) </label><br>
+            <input type="radio" id="student" class="radio-inline" name="status" value="unemployed"> <label for="student"> I am a student.(Unemployed)</label>
+          </div>
+
+          <div id="button-area"><br>
+            <label id="os-label"><b>Operating system experience: </b></label><br>
+            <input type="checkbox" id="win" name="os1" value="windows" checked> <label for="win"> I am experienced with Windows-OS</label><br>
+            <input type="checkbox" id="linux" name="os2" value="linux"> <label for="linux"> I am experienced with Linux-OS</label><br>
+            <input type="checkbox" id="mac" name="0s3" value="mac"> <label for="mac"> I am experienced with Mac-OS</label>
+          </div>
+
+          <div id="dropdown"><br><br>
+            <label id="dropdown-label"><strong>Which Company Smartphone are you using: </strong></label><br>
+            <select id="dropdown" name="Smartphone" class="form"><br><br>
+                <option value="Apple">Apple</option>
+                <option value="Xiaomi">Xiaomi</option>
+                <option value="Realme">Realme</option>
+                <option value="Oppo">Oppo</option>
+                <option value="Vivo">Vivo</option>
+                <option value="Oneplus">Oneplus</option>
+                <option value="Asus">Asus</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Poco">Poco</option>
+            </select>
+         </div>
+
+          <div id="button-area"><br><br>
+            <label id="os-label"><b>Latest technology experience:</b></label><br>
+            <input type="checkbox" id="flutter" name="tech1" value="flutter"> <label for="flutter"> Flutter UI</label><br>
+            <input type="checkbox" id="node" name="tech2" value="nodejs"> <label for="node"> Node.js</label><br>
+            <input type="checkbox" id="tensor" name="tech3" value="tnflow"> <label for="tensor"> Tensorflow</label><br>
+            <input type="checkbox" id="git" name="tech3" value="git"> <label for="git"> Github</label><br>
+            <input type="checkbox" id="dev-ops" name="tech3" value="devops"> <label for="dev-ops"> Dev-Ops</label><br>
+          </div>
+
+          <div id="ending"><br><br>
+            <label id="comments-label">Do you have any suggestion about this survey?</label><br>
+            <textarea style= height:120px; class="form" placeholder="Please feel free to write a review..."></textarea><br><br>
+            <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)"> <label for="terms">I Agree Terms & Conditions </label> 
+<br><br>
+
+  <button type="submit" id="submit" class="btn" onclick="openPopup()">Submit</button>
+  <div class="popup" id="popup">
+      <img src="pop.png" alt="tick">
+      <h2>Thank You</h2>
+      <p>Your details has been successfully submitted. Thanks!</p>
+      <button type="button" onclick="closePopup()" >OK</button>
+  </div>
+          </div>
+        </form>
+    </div> 
+    <script src="main.js"></script>
+</body>
+</html>
